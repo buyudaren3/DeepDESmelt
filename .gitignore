@@ -1,0 +1,83 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+ENV/
+env/
+.venv
+
+# IDE
+.vscode/
+.idea/
+.kiro/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Model checkpoints and results
+model/                        # User-trained models (not checkpoints/)
+models/                       # Alternative naming
+finetune/
+results/
+inference_output/
+optimization_results/
+*.pth                         # Except in checkpoints/
+!checkpoints/**/*.pth         # Keep reference models
+*.pt
+!processed_data/**/*.pt
+*.ckpt
+
+# Exception: Allow reference models in pretrained_models/
+!pretrained_models/*.pth
+!pretrained_models/**/*.pth
+
+# Logs
+logs/
+*.log
+
+# Data (keep structure, ignore large files)
+# Uncomment if you want to track datasets
+# !dataset/*.csv
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*~
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Compressed files
+*.tar.gz
+*.zip
+*.rar
+
+# Optuna
+optuna_*.db
+optuna_*.log
